@@ -11,17 +11,6 @@ const styles = StyleSheet.create({
     alignItems: "center",
     backgroundColor: "#3d5251",
   },
-  nameText: {
-    fontSize: 18,
-    color: "white",
-    fontWeight: "bold",
-    marginBottom: hp(1),
-  },
-  phoneNumber: {
-    fontSize: 16,
-    color: "white",
-    marginBottom: hp(3),
-  },
   poweredBy: {
     fontSize: 12,
     color: "#85e6b6",
@@ -53,9 +42,6 @@ const styles = StyleSheet.create({
     width: wp(9),
     height: hp(9),
     marginTop: hp(5),
-  },
-  avatar: {
-    marginBottom: hp(2),
   },
 });
 

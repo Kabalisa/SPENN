@@ -1,28 +1,21 @@
 import React from "react";
 import { View } from "react-native";
-import { Image, Avatar, Text } from "react-native-elements";
-import { CustomButton } from "../../../components";
+import { Image, Text } from "react-native-elements";
+import { CustomButton, UserInfo } from "../../../components";
 import { styles } from "./styles";
 import SpennIcon from "../../../../assets/spennIcon.png";
 
-const PopulatedLoginScreen = () => {
+const PopulatedLoginScreen = ({ navigation }) => {
   return (
     <View style={styles.container}>
       <Image source={SpennIcon} style={styles.icon} resizeMode="contain" />
       <View style={styles.middleContainer}>
-        <Avatar
-          size={65}
-          rounded
-          icon={{ name: "user-circle", type: "font-awesome", size: 65 }}
-          containerStyle={styles.avatar}
-        />
-        <Text style={styles.nameText}>Innocent Fiston Kabalisa</Text>
-        <Text style={styles.phoneNumber}>+250785382213</Text>
-
+        <UserInfo />
         <CustomButton
           title="Log in"
           backgroundColor="#6dbd95"
           color="#ffffff"
+          onPress={() => navigation.navigate("LoginScreen")}
         />
         <CustomButton
           title="Change account"

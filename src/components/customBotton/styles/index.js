@@ -8,7 +8,7 @@ const styles = StyleSheet.create({
   button: {
     marginBottom: hp(2.5),
     width: wp(80),
-    borderRadius: 15,
+    borderRadius: 12,
   },
 });
 
