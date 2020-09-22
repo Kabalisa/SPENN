@@ -31,12 +31,10 @@ const styles = StyleSheet.create({
     display: "flex",
     alignItems: "center",
     width: wp(100),
-    // backgroundColor: "red",
   },
   poweredContainer: {
     display: "flex",
     alignItems: "center",
-    // backgroundColor: "red",
   },
   icon: {
     width: wp(9),

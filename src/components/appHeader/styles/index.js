@@ -9,9 +9,7 @@ const styles = StyleSheet.create({
     height: hp(11),
     display: "flex",
     flexDirection: "row",
-    // alignItems: "center",
     backgroundColor: "#3d5251",
-    // backgroundColor: "red",
   },
   backIcon: {
     alignSelf: "center",
