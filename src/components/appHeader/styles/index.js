@@ -13,8 +13,8 @@ const styles = StyleSheet.create({
   },
   backIcon: {
     alignSelf: "center",
-    marginTop: hp(3),
-    marginLeft: wp(2)
+    marginTop: hp(4),
+    marginLeft: wp(2),
   },
 });
 

@@ -3,6 +3,13 @@ import {
   LoginScreen,
   ForgotPIN,
   ChangeAccount,
+  AddAccount,
 } from "./auth";
 
-export { PopulatedLoginScreen, LoginScreen, ForgotPIN, ChangeAccount };
+export {
+  PopulatedLoginScreen,
+  LoginScreen,
+  ForgotPIN,
+  ChangeAccount,
+  AddAccount,
+};

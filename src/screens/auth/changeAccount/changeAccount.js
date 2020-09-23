@@ -5,7 +5,7 @@ import { CustomButton } from "../../../components";
 import { styles } from "./styles";
 import SpennIcon from "../../../../assets/spennIcon.png";
 
-const ChangeAccount = () => {
+const ChangeAccount = ({ navigation }) => {
   return (
     <View style={styles.container}>
       <View style={styles.rowOne}>
@@ -21,6 +21,7 @@ const ChangeAccount = () => {
           title="Log in"
           backgroundColor="#ffffff"
           color="#6dbd95"
+          onPress={() => navigation.navigate("addAccount")}
           small
         />
         <CustomButton
