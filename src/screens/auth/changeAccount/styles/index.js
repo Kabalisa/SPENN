@@ -65,7 +65,6 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
   },
   addCountry: {
-    // backgroundColor: "red",
     width: wp(90),
   },
   phoneInput: {
@@ -73,27 +72,58 @@ const styles = StyleSheet.create({
     width: wp(90),
     display: "flex",
     flexDirection: "row",
-    // backgroundColor: "red",
   },
   phoneIcon: {
     fontSize: 24,
     color: "#85e6b6",
     marginLeft: wp(2),
-    // backgroundColor: "blue",
     alignSelf: "center",
   },
   codeInput: {
     width: "30%",
-    // backgroundColor: "yellow",
     alignSelf: "center",
   },
   numberInput: {
     width: "61%",
-    // backgroundColor: "green",
     alignSelf: "center",
   },
   inputStyle: {
     color: "#85e6b6",
+  },
+  chooseCountryTitle: {
+    display: "flex",
+    flexDirection: "row",
+    justifyContent: "space-between",
+    width: wp(90),
+  },
+  titleContainer: {
+    width: "90%",
+    display: "flex",
+    flexDirection: "row",
+    justifyContent: "center",
+  },
+  titleText: {
+    color: "white",
+    fontSize: 22,
+    fontWeight: "600",
+  },
+  titleIcon: {
+    fontSize: 30,
+    color: "#85e6b6",
+  },
+  searchBar: {
+    width: wp(90),
+    backgroundColor: "#3d5251",
+    padding: 0,
+    borderBottomWidth: 0,
+    borderTopWidth: 0,
+    marginTop: hp(1),
+  },
+  flatlistContainer: {
+    width: wp(98),
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
   },
 });
 

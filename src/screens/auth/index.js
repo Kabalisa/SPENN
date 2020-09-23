@@ -1,6 +1,6 @@
 import { PopulatedLoginScreen, LoginScreen } from "./login";
 import ForgotPIN from "./forgotPIN";
-import { ChangeAccount, AddAccount } from "./changeAccount";
+import { ChangeAccount, AddAccount, ChooseCountry } from "./changeAccount";
 
 export {
   PopulatedLoginScreen,
@@ -8,4 +8,5 @@ export {
   ForgotPIN,
   ChangeAccount,
   AddAccount,
+  ChooseCountry,
 };

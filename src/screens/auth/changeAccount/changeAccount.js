@@ -21,7 +21,7 @@ const ChangeAccount = ({ navigation }) => {
           title="Log in"
           backgroundColor="#ffffff"
           color="#6dbd95"
-          onPress={() => navigation.navigate("addAccount")}
+          onPress={() => navigation.navigate("addAccountStack")}
           small
         />
         <CustomButton

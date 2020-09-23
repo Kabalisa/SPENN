@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import { View } from "react-native";
 import { Text, Image, Input } from "react-native-elements";
 import {
@@ -7,11 +7,14 @@ import {
   ChooseCountry,
   Spacer,
 } from "../../../components";
-import { Feather, Entypo } from "@expo/vector-icons";
+import { Feather } from "@expo/vector-icons";
+import { Context as CountryContext } from "../../../context/CountryContext";
 import { styles } from "./styles";
 import SpennIcon from "../../../../assets/spennIcon.png";
 
-const AddAccount = () => {
+const AddAccount = ({ navigation }) => {
+  const { state } = useContext(CountryContext);
+
   return (
     <>
       <AppHeader />
@@ -32,12 +35,15 @@ const AddAccount = () => {
         <Spacer />
         <Spacer />
         <View style={styles.addCountry}>
-          <ChooseCountry />
+          <ChooseCountry onPress={() => navigation.navigate("chooseCountry")} />
         </View>
         <View style={styles.phoneInput}>
           <Feather name="phone" style={styles.phoneIcon} />
           <Input
             placeholder="+"
+            defaultValue={
+              state.choosenCountry ? state.choosenCountry.code : null
+            }
             placeholderTextColor="#b3bab5"
             disabled={true}
             containerStyle={styles.codeInput}
@@ -50,6 +56,7 @@ const AddAccount = () => {
             inputStyle={styles.inputStyle}
             autoCapitalize="none"
             autoCorrect={false}
+            disabled={state.choosenCountry ? false : true}
             keyboardType="numbers-and-punctuation"
             keyboardAppearance="dark"
             selectionColor="#85e6b6"

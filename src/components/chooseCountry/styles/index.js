@@ -9,7 +9,6 @@ const styles = StyleSheet.create({
     display: "flex",
     flexDirection: "row",
     alignItems: "center",
-    // backgroundColor: "blue",
     width: "100%",
   },
   location: {
@@ -20,7 +19,6 @@ const styles = StyleSheet.create({
     marginLeft: wp(2),
   },
   nextConntainer: {
-    // backgroundColor: "blue",
     flex: 1,
     flexDirection: "row",
     justifyContent: "flex-end",
@@ -28,6 +26,10 @@ const styles = StyleSheet.create({
   next: {
     fontSize: 34,
     color: "#d9d6d0",
+  },
+  check: {
+    fontSize: 34,
+    color: "#85e6b6",
   },
   chooseCountry: {
     color: "white",

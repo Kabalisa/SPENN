@@ -2,7 +2,7 @@ import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import { AuthStack } from "./AuthStack";
-import { ChangeAccountStack } from "./changeAccountStack";
+import { ChangeAccountStack } from "./ChangeAccountStack";
 // import { MainFlowTabs } from "./mainFlowTabs";
 
 const Stack = createStackNavigator();

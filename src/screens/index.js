@@ -4,6 +4,7 @@ import {
   ForgotPIN,
   ChangeAccount,
   AddAccount,
+  ChooseCountry,
 } from "./auth";
 
 export {
@@ -12,4 +13,5 @@ export {
   ForgotPIN,
   ChangeAccount,
   AddAccount,
+  ChooseCountry,
 };
