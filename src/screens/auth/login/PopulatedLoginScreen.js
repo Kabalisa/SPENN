@@ -21,6 +21,7 @@ const PopulatedLoginScreen = ({ navigation }) => {
           title="Change account"
           backgroundColor="#ffffff"
           color="#6dbd95"
+          onPress={() => navigation.navigate("newAccount")}
         />
       </View>
       <View style={styles.poweredContainer}>

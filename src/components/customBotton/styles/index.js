@@ -1,10 +1,8 @@
-import { StyleSheet, Platform } from "react-native";
+import { StyleSheet } from "react-native";
 import {
   widthPercentageToDP as wp,
   heightPercentageToDP as hp,
 } from "react-native-responsive-screen";
-
-const isIOS = Platform.OS === "ios";
 
 const styles = StyleSheet.create({
   button: {
@@ -16,6 +14,10 @@ const styles = StyleSheet.create({
     marginBottom: hp(2.5),
     width: "90%",
     borderRadius: 12,
+  },
+  smallButton: {
+    width: "40%",
+    borderRadius: 30,
   },
 });
 
