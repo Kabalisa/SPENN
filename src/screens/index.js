@@ -1,3 +1,3 @@
-import { PopulatedLoginScreen, LoginScreen } from "./auth";
+import { PopulatedLoginScreen, LoginScreen, ForgotPIN } from "./auth";
 
-export { PopulatedLoginScreen, LoginScreen };
+export { PopulatedLoginScreen, LoginScreen, ForgotPIN };

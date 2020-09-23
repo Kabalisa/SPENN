@@ -14,23 +14,40 @@ const styles = StyleSheet.create({
     width: wp(7),
     height: hp(7),
   },
-  welcome: {
+  lockIcon: {
+    fontSize: 28,
+    color: "#85e6b6",
+    alignSelf: "center",
+  },
+  forgotBody: {
+    width: wp(100),
+    display: "flex",
+  },
+  titleContainer: {
     display: "flex",
     flexDirection: "row",
+    justifyContent: "space-evenly",
+    width: wp(100),
     marginTop: hp(3),
   },
-  welcomeText: {
-    color: "white",
-    fontSize: 20,
-    fontWeight: "bold",
+  titleTextContainer: {
+    display: "flex",
+    flexDirection: "row",
+    flexWrap: "wrap",
+    width: wp(80),
   },
-  loginBody: {
-    marginTop: hp(5),
+  titleText: {
+    color: "white",
+    fontSize: 16,
+  },
+  changePin: {
+    width: wp(100),
     display: "flex",
     alignItems: "center",
+    marginTop: hp(8),
   },
   inputContainer: {
-    width: wp(85),
+    width: wp(95),
     marginTop: hp(3),
   },
   inputContainerStyle: {
@@ -41,12 +58,8 @@ const styles = StyleSheet.create({
     textAlign: "center",
     color: "#85e6b6",
   },
-  inputIcon: {
-    fontSize: 28,
-    color: "white",
-  },
   forgotContainer: {
-    width: wp(85),
+    width: wp(90),
     display: "flex",
     flexDirection: "row",
     justifyContent: "flex-end",

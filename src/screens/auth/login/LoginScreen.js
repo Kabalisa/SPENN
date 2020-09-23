@@ -12,7 +12,7 @@ import { CustomButton, AppHeader, UserInfo } from "../../../components";
 import { styles } from "./styles/login";
 import SpennIcon from "../../../../assets/spennIcon.png";
 
-const LoginScreen = () => {
+const LoginScreen = ({ navigation }) => {
   const [show, setShow] = useState(true);
 
   return (
@@ -36,7 +36,7 @@ const LoginScreen = () => {
             <UserInfo />
             <Input
               placeholder="PIN"
-              placeholderTextColor="white"
+              placeholderTextColor="#b3bab5"
               containerStyle={styles.inputContainer}
               inputContainerStyle={styles.inputContainerStyle}
               inputStyle={styles.inputStyle}
@@ -55,9 +55,14 @@ const LoginScreen = () => {
               autoCorrect={false}
               secureTextEntry={show}
               keyboardType="numbers-and-punctuation"
+              textContentType="oneTimeCode"
+              keyboardAppearance="dark"
+              selectionColor="#85e6b6"
             />
             <View style={styles.forgotContainer}>
-              <TouchableOpacity>
+              <TouchableOpacity
+                onPress={() => navigation.navigate("forgotPIN")}
+              >
                 <Text style={styles.forgotText}>forgot PIN?</Text>
               </TouchableOpacity>
             </View>
@@ -65,7 +70,6 @@ const LoginScreen = () => {
               title="Log in"
               backgroundColor="#6dbd95"
               color="#ffffff"
-              //   onPress={() => navigation.navigate("LoginScreen")}
             />
           </View>
         </View>
