@@ -6,11 +6,20 @@ import {
   heightPercentageToDP as hp,
 } from "react-native-responsive-screen";
 
-const CustomButton = ({ title, backgroundColor, color, onPress, modal }) => {
+const CustomButton = ({
+  title,
+  backgroundColor,
+  color,
+  onPress,
+  modal,
+  small,
+}) => {
   return (
     <Button
       title={title}
-      containerStyle={modal ? styles.modalButton : styles.button}
+      containerStyle={
+        modal ? styles.modalButton : small ? styles.smallButton : styles.button
+      }
       buttonStyle={{ height: hp(8), backgroundColor }}
       titleStyle={{ color, fontSize: 19, fontWeight: "600" }}
       onPress={onPress}

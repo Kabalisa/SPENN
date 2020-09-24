@@ -8,14 +8,13 @@ export const styles = StyleSheet.create({
   modalContainner: {
     alignSelf: "center",
     backgroundColor: "rgba(0, 0, 0, 0.0)",
-    // backgroundColor: "blue",
     width: wp("80%"),
     height: hp("50%"),
     display: "flex",
   },
   closeIcon: {
     alignSelf: "flex-end",
-    marginBottom: hp(-1),
+    marginBottom: hp(-1.5),
     backgroundColor: "white",
     zIndex: 2,
   },
@@ -30,6 +29,7 @@ export const styles = StyleSheet.create({
     justifyContent: "center",
     borderBottomWidth: 1,
     paddingBottom: hp(1),
+    padding: 10,
   },
   modalHeaderText: {
     fontSize: 18,
