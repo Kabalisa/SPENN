@@ -8,7 +8,12 @@ import {
 } from "react-native";
 import { Image, Text, Input } from "react-native-elements";
 import { Ionicons } from "@expo/vector-icons";
-import { CustomButton, AppHeader, UserInfo } from "../../../components";
+import {
+  CustomButton,
+  AppHeader,
+  UserInfo,
+  PINInput,
+} from "../../../components";
 import { styles } from "./styles/login";
 import SpennIcon from "../../../../assets/spennIcon.png";
 
@@ -34,31 +39,7 @@ const LoginScreen = ({ navigation }) => {
           </View>
           <View style={styles.loginBody}>
             <UserInfo />
-            <Input
-              placeholder="PIN"
-              placeholderTextColor="#b3bab5"
-              containerStyle={styles.inputContainer}
-              inputContainerStyle={styles.inputContainerStyle}
-              inputStyle={styles.inputStyle}
-              leftIcon={<Ionicons name="ios-lock" style={styles.inputIcon} />}
-              label="Enter PIN"
-              labelStyle={{ color: "#6dbd95" }}
-              rightIcon={
-                <TouchableOpacity onPress={() => setShow(!show)}>
-                  <Ionicons
-                    name={show ? "md-eye" : "md-eye-off"}
-                    style={styles.inputIcon}
-                  />
-                </TouchableOpacity>
-              }
-              autoCapitalize="none"
-              autoCorrect={false}
-              secureTextEntry={show}
-              keyboardType="numbers-and-punctuation"
-              textContentType="oneTimeCode"
-              keyboardAppearance="dark"
-              selectionColor="#85e6b6"
-            />
+            <PINInput label="Enter PIN" />
             <View style={styles.forgotContainer}>
               <TouchableOpacity
                 onPress={() => navigation.navigate("forgotPIN")}

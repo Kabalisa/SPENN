@@ -5,16 +5,27 @@ import {
 } from "react-native-responsive-screen";
 
 const styles = StyleSheet.create({
-  container: {
-    height: hp(11),
+  phoneInput: {
+    marginTop: hp(4),
+    width: wp(90),
     display: "flex",
     flexDirection: "row",
-    backgroundColor: "#3d5251",
   },
-  backIcon: {
+  phoneIcon: {
+    fontSize: 24,
+    marginLeft: wp(2),
     alignSelf: "center",
-    marginTop: hp(4),
-    marginLeft: wp(3),
+  },
+  codeInput: {
+    width: "30%",
+    alignSelf: "center",
+  },
+  inputStyle: {
+    color: "#85e6b6",
+  },
+  numberInput: {
+    width: "61%",
+    alignSelf: "center",
   },
 });
 

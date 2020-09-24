@@ -5,6 +5,12 @@ import {
   ChangeAccount,
   AddAccount,
   ChooseCountry,
+  LocationPartScreen,
+  NamesPartScreen,
+  SecurityScreen,
+  SignUpChooseCountry,
+  ChooseCurrency,
+  NamesScreen,
 } from "./auth";
 
 export {
@@ -14,4 +20,10 @@ export {
   ChangeAccount,
   AddAccount,
   ChooseCountry,
+  LocationPartScreen,
+  NamesPartScreen,
+  SecurityScreen,
+  SignUpChooseCountry,
+  ChooseCurrency,
+  NamesScreen,
 };

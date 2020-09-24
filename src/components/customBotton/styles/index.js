@@ -19,6 +19,13 @@ const styles = StyleSheet.create({
     width: "40%",
     borderRadius: 30,
   },
+  diabledButton: {
+    marginBottom: hp(2.5),
+    width: "90%",
+    borderRadius: 12,
+    borderWidth: 2,
+    borderColor: "#b3bab5",
+  },
 });
 
 export { styles };

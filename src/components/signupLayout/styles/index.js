@@ -7,10 +7,10 @@ import {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#3d5251",
     alignItems: "center",
+    backgroundColor: "#3d5251",
   },
-  icon: {
+  smallIcon: {
     width: wp(7),
     height: hp(7),
   },
@@ -23,23 +23,6 @@ const styles = StyleSheet.create({
     color: "white",
     fontSize: 20,
     fontWeight: "bold",
-  },
-  loginBody: {
-    marginTop: hp(5),
-    display: "flex",
-    alignItems: "center",
-  },
-  forgotContainer: {
-    width: wp(85),
-    display: "flex",
-    flexDirection: "row",
-    justifyContent: "flex-end",
-    marginBottom: hp(4),
-  },
-  forgotText: {
-    fontSize: 16,
-    fontWeight: "bold",
-    color: "#85e6b6",
   },
 });
 
