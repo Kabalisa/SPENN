@@ -15,7 +15,13 @@
     },
     "assetBundlePatterns": ["**/*"],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.SpennChallenge.SPENN",
+      "buildNumber": "1.0.0"
+    },
+    "android": {
+      "package": "com.SpennChallenge.SPENN",
+      "versionCode": 1
     },
     "web": {
       "favicon": "./assets/favicon.png"

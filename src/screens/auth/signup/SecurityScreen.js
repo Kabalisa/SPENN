@@ -8,7 +8,7 @@ import {
 } from "../../../components";
 import { styles } from "./styles";
 
-const SecurityScreen = () => {
+const SecurityScreen = ({ navigation }) => {
   return (
     <SignupLayout>
       <View style={styles.body}>
@@ -18,9 +18,9 @@ const SecurityScreen = () => {
         <Spacer />
         <CustomButton
           title="Continue"
-          backgroundColor="white"
-          color="#b3bab5"
-          disabled
+          backgroundColor="#6dbd95"
+          color="white"
+          onPress={() => navigation.navigate("main")}
         />
       </View>
     </SignupLayout>

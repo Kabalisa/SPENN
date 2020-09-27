@@ -12,6 +12,7 @@ import PINInput from "./PINInput";
 import CountriesList from "./countriesList";
 import CurrencyList from "./currencyList";
 import NameInput from "./nameInput";
+import InAppHeader from "./inAppHeader";
 
 export {
   CustomButton,
@@ -28,4 +29,5 @@ export {
   CountriesList,
   CurrencyList,
   NameInput,
+  InAppHeader,
 };

@@ -18,7 +18,7 @@ import { styles } from "./styles";
 
 const ChooseCountry = ({ onPress, light, currency, user }) => {
   const { state } = useContext(CountryContext);
-  const { state: signupContext } = useContext(SignupContext);
+  const { state: signupState } = useContext(SignupContext);
 
   return (
     <TouchableNativeFeedback onPress={onPress}>
@@ -68,7 +68,11 @@ const ChooseCountry = ({ onPress, light, currency, user }) => {
                 : state.choosenCountry.currency
               : currency && !state.choosenCountry
               ? "Choose currency"
-              : user
+              : user && signupState.user.firstName && signupState.user.lastName
+              ? `${signupState.user.firstName} ${signupState.user.middleName} ${signupState.user.lastName}`
+              : user &&
+                !signupState.user.firstName &&
+                !signupState.user.lastName
               ? "Add your name"
               : state.choosenCountry
               ? state.choosenCountry.name
@@ -103,7 +107,7 @@ const ChooseCountry = ({ onPress, light, currency, user }) => {
               />
             )
           ) : user ? (
-            !signupContext.user.firstName || !signupContext.user.lastName ? (
+            !signupState.user.firstName || !signupState.user.lastName ? (
               <MaterialIcons
                 name="navigate-next"
                 style={[
