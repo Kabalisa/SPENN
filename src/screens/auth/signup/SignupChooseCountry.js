@@ -1,8 +1,8 @@
 import React from "react";
 import { CountriesList } from "../../../components";
 
-const ChooseCountry = () => {
+const SignUpChooseCountry = () => {
   return <CountriesList />;
 };
 
-export default ChooseCountry;
+export default SignUpChooseCountry;

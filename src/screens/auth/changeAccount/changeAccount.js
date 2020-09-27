@@ -28,6 +28,7 @@ const ChangeAccount = ({ navigation }) => {
           title="Sign up"
           backgroundColor="#6dbd95"
           color="#ffffff"
+          onPress={() => navigation.navigate("createAccountStack")}
           small
         />
       </View>

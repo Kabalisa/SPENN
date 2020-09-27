@@ -13,12 +13,19 @@ const CustomButton = ({
   onPress,
   modal,
   small,
+  disabled,
 }) => {
   return (
     <Button
       title={title}
       containerStyle={
-        modal ? styles.modalButton : small ? styles.smallButton : styles.button
+        modal
+          ? styles.modalButton
+          : small
+          ? styles.smallButton
+          : disabled
+          ? styles.diabledButton
+          : styles.button
       }
       buttonStyle={{ height: hp(8), backgroundColor }}
       titleStyle={{ color, fontSize: 19, fontWeight: "600" }}

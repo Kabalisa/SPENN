@@ -72,6 +72,20 @@ const countryReducer = (state, action) => {
     case "CLEAR_SEARCH":
       return { ...state, searching: false };
 
+    case "RESET_STATE":
+      return {
+        countries: countryData,
+        choosenCountry: null,
+        searching: false,
+        searchedCountries: [],
+      };
+
+    case "CHOOSE_CURRENCY":
+      return {
+        ...state,
+        choosenCountry: { ...state.choosenCountry, currency: action.payload },
+      };
+
     default:
       return state;
   }
@@ -90,6 +104,13 @@ const searchCountries = (dispatch) => (country) =>
 
 const clearSearch = (dispatch) => () => dispatch({ type: "CLEAR_SEARCH" });
 
+const resetState = (dispatch) => () => dispatch({ type: "RESET_STATE" });
+
+const chooseCurrency = (dispatch) => async (currency, callback) => {
+  await dispatch({ type: "CHOOSE_CURRENCY", payload: currency });
+  callback();
+};
+
 export const { Context, Provider } = createDatacontext(
   countryReducer,
   {
@@ -97,6 +118,8 @@ export const { Context, Provider } = createDatacontext(
     chooseCountry,
     searchCountries,
     clearSearch,
+    resetState,
+    chooseCurrency,
   },
   {
     countries: countryData,

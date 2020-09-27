@@ -13,7 +13,6 @@ const styles = StyleSheet.create({
   },
   location: {
     fontSize: 34,
-    color: "#85e6b6",
   },
   countryContainer: {
     marginLeft: wp(2),
@@ -25,18 +24,14 @@ const styles = StyleSheet.create({
   },
   next: {
     fontSize: 34,
-    color: "#d9d6d0",
   },
   check: {
     fontSize: 34,
-    color: "#85e6b6",
   },
   chooseCountry: {
-    color: "white",
     fontSize: 16,
   },
   chosenCountry: {
-    color: "#b3bab5",
     fontSize: 15,
     marginTop: hp(1),
   },
