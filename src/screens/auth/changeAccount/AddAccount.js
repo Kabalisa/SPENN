@@ -40,6 +40,7 @@ const AddAccount = ({ navigation }) => {
           title="Log in"
           backgroundColor="#6dbd95"
           color="#ffffff"
+          onPress={() => navigation.navigate("main")}
         />
       </View>
     </>

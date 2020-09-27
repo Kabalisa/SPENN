@@ -13,6 +13,14 @@ import {
   NamesScreen,
 } from "./auth";
 
+import {
+  TransfersScreen,
+  MyMoneyScreen,
+  MapScreen,
+  InboxScreen,
+  ProfileScreen,
+} from "./main";
+
 export {
   PopulatedLoginScreen,
   LoginScreen,
@@ -26,4 +34,9 @@ export {
   SignUpChooseCountry,
   ChooseCurrency,
   NamesScreen,
+  TransfersScreen,
+  MyMoneyScreen,
+  MapScreen,
+  InboxScreen,
+  ProfileScreen,
 };
